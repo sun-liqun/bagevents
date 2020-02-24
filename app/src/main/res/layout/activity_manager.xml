@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bagevent.view.MyLinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/activity_manager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"/>
+
+            <include layout="@layout/activity_manager_bottom"/>
+        </com.bagevent.view.MyLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+    <!--右边菜单-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_right_drawer"
+        android:layout_width="287dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_marginLeft="9dip"
+            android:gravity="center_vertical"
+            android:text="@string/filter"
+            android:textColor="#898989"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_status"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e5e5e5" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94px">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rebuild"
+                android:textColor="#FF9000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF9000"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

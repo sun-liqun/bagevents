@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#e5e5e5"
+    android:gravity="center"
+    android:id="@+id/ll_audit_order"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/tv_audit_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="15sp"
+        android:focusable="false"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

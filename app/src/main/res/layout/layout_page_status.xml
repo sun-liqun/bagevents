@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_page_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_page_status"
+        android:layout_width="215dp"
+        android:layout_height="180dp"
+        android:src="@drawable/wuwangluo" />
+
+    <TextView
+        android:id="@+id/tv_page_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/network"
+        android:textColor="#dcdcdc"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/click_retry"
+        android:textColor="#ff9000"
+        android:textSize="14dp"
+        android:visibility="gone" />
+</com.zhy.autolayout.AutoLinearLayout>

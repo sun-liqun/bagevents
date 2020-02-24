@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_invoice_heder">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice_type"
+                android:textColor="#8e8393"
+                android:textSize="14dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:id="@+id/tv_invoice_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="15dp"
+                android:layout_marginTop="8dp"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务项目"
+                android:textColor="#8e8393"
+                android:textSize="14dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:id="@+id/tv_invoice_Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="15dp"
+                android:layout_marginTop="8dp"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_invoice_more"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="13dp">
+
+            <ImageView
+                android:id="@+id/iv_invoice_more"
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:src="@drawable/xiala" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ededed"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_invoice_header2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invoicing_code1"
+                android:textColor="#8e8393"
+                android:textSize="14dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:id="@+id/tv_use_companycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="15dp" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice_person_type"
+                android:textColor="#8e8393"
+                android:textSize="14dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:id="@+id/tv_reciver_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="15dp"
+                android:layout_marginTop="8dp"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/receive_type"
+                android:textColor="#8e8393"
+                android:textSize="14dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:id="@+id/tv_obtain_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="15dp"
+                android:layout_marginTop="8dp"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ededed"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

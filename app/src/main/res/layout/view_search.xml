@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/ll_view_search"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="14px"
+        android:layout_marginRight="16px"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0.9"
+        android:background="@drawable/search_box_bg"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="center"
+            android:src="@drawable/img_search"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_search_box"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="32px"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/iv_search_clear"
+            android:layout_width="38px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/shanchu"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/btn_search_cancle"
+        android:layout_width="0dp"
+        android:layout_height="72px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16px"
+        android:layout_weight="0.1"
+        android:background="@drawable/ll_btn_border"
+        android:gravity="fill_vertical"
+        android:text="@string/cancel"
+        android:textColor="@color/fe6900"
+        android:textSize="28px" />
+
+</com.zhy.autolayout.AutoLinearLayout>
+

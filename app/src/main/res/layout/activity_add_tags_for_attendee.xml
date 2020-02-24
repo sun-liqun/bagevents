@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".new_home.new_activity.AddTagsForAttendee">
+
+    <include layout="@layout/common_title_exhibitor"/>
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/rl_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+        <include layout="@layout/layout_no_attendee"/>
+    </com.zhy.autolayout.AutoFrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_tags"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/btn_sure"
+        android:textColor="@color/white"
+        android:background="#FFFF9000"/>
+</com.zhy.autolayout.AutoLinearLayout>

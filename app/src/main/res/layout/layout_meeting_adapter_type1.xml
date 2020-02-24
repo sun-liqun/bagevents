@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_meeting_letter"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="#fafafa"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+</LinearLayout>
