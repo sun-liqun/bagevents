@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_event_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="32px"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23px"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_collect_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/grey"
+        android:text="@string/collect"
+        android:gravity="bottom"
+        android:textSize="24px"
+        android:layout_marginTop="15px"
+        android:layout_below="@+id/tv_event_name"
+        android:layout_alignStart="@+id/tv_event_name" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/e6edf2"
+        android:id="@+id/collect_line"
+        android:layout_below="@+id/tv_collect_name"
+        android:layout_alignStart="@+id/tv_collect_name"
+        android:layout_alignEnd="@+id/ll_collect_barcode"
+        android:layout_marginTop="15px"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32px"
+        android:text="9"
+        android:layout_marginTop="15px"
+        android:textColor="@color/fe6900"
+        android:id="@+id/tv_collect_checkincounts"
+        android:layout_below="@+id/collect_line"
+        android:layout_alignStart="@+id/tv_collect_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:text="@string/people_come"
+        android:layout_marginTop="5px"
+        android:layout_marginBottom="30px"
+        android:textColor="@color/grey"
+        android:layout_below="@+id/tv_collect_checkincounts"
+        android:layout_alignStart="@+id/tv_collect_checkincounts"
+        android:id="@+id/tv_mark_count" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_collect_barcode"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:orientation="horizontal"
+        android:layout_marginEnd="23dp"
+        android:layout_below="@+id/collect_line"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25px"
+        android:gravity="right">
+
+        <ImageView
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:src="@drawable/sweep"
+            android:layout_gravity="center"
+            android:layout_alignBottom="@+id/tv_mark_count"
+            android:layout_alignEnd="@+id/ll_collect_barcode"
+            android:id="@+id/imageView3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/e6edf2"
+        android:layout_below="@+id/tv_mark_count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40px"
+        android:layout_marginEnd="40px"/>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

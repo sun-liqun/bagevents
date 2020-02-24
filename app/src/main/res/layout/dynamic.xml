@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?><!--内容-->
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_event_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:drawableRight="@drawable/xiala_hei"
+                    android:drawablePadding="4dp"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="@string/all_event"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_event_filter"
+                android:layout_width="45dip"
+                android:layout_height="match_parent"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:src="@drawable/icon_filtrate" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center_vertical"
+                android:background="#ccc" />
+
+            <ImageView
+                android:id="@+id/iv_refresh"
+                android:layout_width="45dip"
+                android:layout_height="match_parent"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:src="@drawable/icon_refresh" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#e5e5e5" />
+
+        <!--<com.zhy.autolayout.AutoLinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="76dip"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:drawableTop="@drawable/guest_ranking"-->
+        <!--android:drawablePadding="4dip"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="嘉宾排名"-->
+        <!--android:textColor="@color/color545454"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:drawableTop="@drawable/schedule_ranking"-->
+        <!--android:drawablePadding="4dip"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="日程排名"-->
+        <!--android:textColor="@color/color545454"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<com.zhy.autolayout.AutoFrameLayout-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:drawableTop="@drawable/question_result"-->
+        <!--android:drawablePadding="4dip"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="问卷结果"-->
+        <!--android:textColor="@color/color545454"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_unread_count"-->
+        <!--android:layout_width="18dp"-->
+        <!--android:layout_height="18dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginTop="5dip"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:background="@drawable/tv_border_circle_organge"-->
+        <!--android:gravity="center"-->
+        <!--android:text="99+"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="8sp"-->
+        <!--android:visibility="gone" />-->
+        <!--</com.zhy.autolayout.AutoFrameLayout>-->
+
+
+        <!--<TextView-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:drawableTop="@drawable/lottery_result"-->
+        <!--android:drawablePadding="4dip"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="抽奖结果"-->
+        <!--android:textColor="@color/color545454"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:drawableTop="@drawable/event_notification"-->
+        <!--android:drawablePadding="4dip"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="活动通知"-->
+        <!--android:textColor="@color/color545454"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--</com.zhy.autolayout.AutoLinearLayout>-->
+
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_publish_dynamic"
+                android:layout_width="57dip"
+                android:layout_height="57dip"
+                android:layout_gravity="right|bottom"
+                android:layout_marginEnd="15dip"
+                android:layout_marginBottom="40dip"
+                android:src="@drawable/icon_publish_dynamic"
+                android:visibility="visible"/>
+        </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

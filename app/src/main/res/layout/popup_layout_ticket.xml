@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8f000000">
+    
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_popupwindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_free_send"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/free_give"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f6f6f6"/>
+
+        <TextView
+            android:id="@+id/tv_scene_pay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/spot_payment"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

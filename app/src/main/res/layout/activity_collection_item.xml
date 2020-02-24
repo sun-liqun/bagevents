@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="60dip">
+
+        <com.bagevent.view.CircleTextView
+            android:id="@+id/tv_collect_letter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginStart="20px" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:text=""
+            android:layout_marginStart="16px"
+            android:id="@+id/tv_collect_name"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_collect_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24px"
+            android:textColor="@color/a797d7f"
+            android:layout_marginRight="20px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
