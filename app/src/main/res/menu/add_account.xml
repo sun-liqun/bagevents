@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <item
+        android:id="@+id/menu_add_alipay"
+        android:icon="@drawable/ic_add_alipay"
+        android:title="添加支付宝"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_add_bankcard"
+        android:icon="@drawable/ic_add_bank"
+        android:title="添加银行卡"
+        app:showAsAction="never"
+        android:visible="true"/>
+
+</menu>

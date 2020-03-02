@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="13dp"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_home_event_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#202020"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sort"
+                    android:layout_width="35dp"
+                    android:layout_height="18dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_event_organge"/>
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_sort"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="18dp"-->
+                    <!--android:src="@drawable/activity_remark" />-->
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/tv_home_event_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF484848"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text=""
+                android:textSize="12sp"
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_join_favorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/sign_up"
+                        android:textColor="#FF484848"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tv_home_have_join"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="7dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="#ff9000"
+                        android:textSize="14sp" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.3">
+
+                    <TextView
+                        android:id="@+id/tv_income_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_income1"
+                        android:textColor="#FF484848"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:id="@+id/tv_home_event_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="#ff9000"
+                        android:textSize="14sp"
+                        android:layout_gravity="bottom"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_home_audit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/audit_wait"
+                        android:textColor="#FF484848"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_audit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="7dp"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:textColor="#ff9000"
+                        android:textSize="14sp" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="9dp"
+        android:background="#e5e5e5" />
+
+</com.zhy.autolayout.AutoLinearLayout>

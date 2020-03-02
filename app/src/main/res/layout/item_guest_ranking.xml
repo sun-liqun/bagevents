@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dip"
+        android:src="@drawable/default_head" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dip"
+        android:layout_marginTop="21dip"
+        android:layout_toRightOf="@id/iv_head"
+        android:text=""
+        android:textColor="#202020"
+        android:textSize="13sp" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_ask_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dip"
+        android:layout_marginRight="12dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="267"
+            android:textColor="#FF9000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_num"
+            android:textColor="#545454"
+            android:textSize="12sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ll_ask_number"
+        android:layout_marginRight="22dip"
+        android:layout_toLeftOf="@id/ll_ask_number"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF9000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attention_degree"
+            android:textColor="#545454"
+            android:textSize="12sp" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@id/ll_attention"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="#898989"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="21dip"
+        android:background="#EEEEEE" />
+</com.zhy.autolayout.AutoRelativeLayout>

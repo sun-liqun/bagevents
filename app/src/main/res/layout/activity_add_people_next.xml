@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_title"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_common_title"
+        android:layout_above="@+id/tv_confirm_attendee">
+        <include layout="@layout/layout_loading"/>
+        <ScrollView
+            android:id="@+id/scroll_ui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/ll_add_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_confirm_attendee"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/sure_add"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="#ff9000"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

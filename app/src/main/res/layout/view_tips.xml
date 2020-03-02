@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tips"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dip"
+        android:drawableLeft="@drawable/icon_tips"
+        android:text="@string/dynamic_tips1"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/dynamic_tips2"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_know_tips"
+        android:layout_width="144dip"
+        android:layout_height="37dip"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/btn_know" />
+</com.zhy.autolayout.AutoLinearLayout>

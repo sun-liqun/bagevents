@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f9">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <include layout="@layout/common_title"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5b5b5"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buyer_num"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="14dp"/>
+
+            <com.bagevent.view.MyRadioGroup
+                android:id="@+id/rg_message_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="11dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_message1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="@string/one"
+                        android:textColor="@drawable/tv_select"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="@drawable/rg_selecter_bg"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_message2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rg_selecter_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/two"
+                        android:textColor="@drawable/tv_select"
+                        android:textSize="14sp" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="11dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_message3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="@string/five"
+                        android:textColor="@drawable/tv_select"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="@drawable/rg_selecter_bg"/>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_message4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rg_selecter_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/thousand"
+                        android:textColor="@drawable/tv_select"
+                        android:textSize="14sp" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.bagevent.view.MyRadioGroup>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="11dp">
+
+                <EditText
+                    android:id="@+id/et_recharge_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/other"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:layout_weight="1"
+                    android:background="#f3f3f3"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_payment"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="11dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#bbbbbb"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/zhifubao"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="17dp"
+                    android:text="@string/alipay"/>
+
+                <ImageView
+                    android:id="@+id/iv_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xuanzhong"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="14dp"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e9eb"
+                android:layout_marginLeft="12dp"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_wxpay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/weixin"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="17dp"
+                    android:text="@string/wechat"/>
+
+                <ImageView
+                    android:id="@+id/iv_wxpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_weixuanzhong"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="14dp"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e8e9eb"
+                android:layout_marginLeft="12dp"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_accountpay"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_account"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"/>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="17dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/have_money"/>
+
+                    <TextView
+                        android:id="@+id/tv_account_banlance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_accountpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_weixuanzhong"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="14dp"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="16dp"
+            android:textSize="11dp"
+            android:textColor="#898989"
+            android:text="温馨提示：您充值的短信，仅可用做信息通知使用，不可发送营销短信，如有发现，百格有权永久禁用您的短信发送功能和短信余额"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_wait"
+                android:textSize="14sp"
+                android:textColor="#898989"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_money"
+                android:textSize="14sp"
+                android:textColor="#ff9000"/>
+
+            <TextView
+                android:id="@+id/tv_pay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#ff9000"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#ff9000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_confirm"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

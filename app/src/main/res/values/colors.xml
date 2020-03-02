@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="acolorPrimary">#aa3F51B5</color>
+    <color name="acolorPrimaryDark">#aa303F9F</color>
+    <color name="acolorAccent">#aaFF4081</color>
+    <color name="transAlpha">#99ffffff</color>
+    <color name="color_light_organge">#60dca2</color>
+    <color name="color_light_red">#ff574b</color>
+    <color name="item">#ededed</color>
+    <color name="f3f3f3">#f3f3f3</color>
+    <color name="color545454">#545454</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="tv_grey">#8e8e93</color>
+    <color name="white">#ffffff</color>
+    <color name="fe6900">#fe6900</color>
+    <color name="alpha_fe6900">#fffe6900</color>
+    <color name="ff993b">#ff993b</color>
+    <color name="ff9000">#ff9000</color>
+    <color name="red">#FF0000</color>
+    <color name="alpha_red">#33FF0000</color>
+    <color name="black">#000000</color>
+    <color name="e6edf2">#f5f4f9</color>
+    <color name="grey">	#484848</color>
+    <color name="e59c709">#59c709</color>
+    <color name="a00a0eb">#00a0eb</color>
+    <color name="e5e5e5">#e5e5e5</color>
+    <color name="gray">#898989</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="a3aaad">#a3aaad</color>
+    <color name="theme_gray">#646464</color>
+    <color name="ff9a3b">#ff9a3b</color>
+    <color name="a59c709">#59c709</color>
+    <color name="aFF1D00">#ff1d00</color>
+    <color name="a59C60A">#59c60a</color>
+    <color name="ced3d8">#ced3d8</color>
+    <color name="a797d7f">#797d7f</color>
+    <color name="a99323232">#99323232</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="a009feb">#009feb</color>
+    <color name="ff5c">#FF5C00</color>
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#ffffff</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+
+    <!-- Theme Colors -->
+    <color name="theme_white_primary">#FFFFFF</color>
+    <color name="theme_white_dark">#FFFFFF</color>
+    <color name="theme_white_accent">#000000</color>
+
+    <color name="theme_blue_primary">#2196F3</color>
+    <color name="theme_blue_dark">#1976D2</color>
+    <color name="theme_blue_accent">#FF4081</color>
+
+    <color name="theme_orange_primary">#FF5722</color>
+    <color name="theme_orange_dark">#E64A19</color>
+    <color name="theme_light_blue_accent">#FF4081</color>
+
+    <color name="theme_cyan_primary">#00BCD4</color>
+    <color name="theme_cyan_dark">#0097A7</color>
+    <color name="theme_cyan_accent">#FF4081</color>
+
+    <color name="theme_green_primary">#4CAF50</color>
+    <color name="theme_green_dark">#388E3C</color>
+    <color name="theme_green_accent">#FF4081</color>
+
+    <color name="theme_teal_primary">#009688</color>
+    <color name="theme_teal_dark">#00796B</color>
+    <color name="theme_teal_accent">#FF4081</color>
+
+    <color name="theme_red_primary">#da4336</color>
+    <color name="theme_red_dark">#b93221</color>
+    <color name="theme_red_accent">#3D5AFE</color>
+
+    <color name="theme_pink_primary">#E91E63</color>
+    <color name="theme_pink_dark">#C2185B</color>
+    <color name="theme_pink_accent">#3D5AFE</color>
+
+    <color name="theme_purple_primary">#673AB7</color>
+    <color name="theme_purple_dark">#512DA8</color>
+    <color name="theme_purple_accent">#FF4081</color>
+
+    <color name="theme_grey_primary">#616161</color>
+    <color name="theme_grey_dark">#424242</color>
+    <color name="theme_grey_accent">#00E676</color>
+
+    <color name="theme_black_primary">#2A2A2F</color>
+    <color name="theme_black_dark">#151515</color>
+    <color name="theme_black_accent">#FF4081</color>
+
+    <color name="theme_brown_primary">#785447</color>
+    <color name="theme_brown_dark">#5C3F36</color>
+    <color name="theme_blown_accent">#785447</color>
+
+    <color name="text_red">#ff0000</color>
+    <color name="text_green">#2bb600</color>
+    <color name="alpha_white">#aaffffff</color>
+    <color name="f5f5f5">#f5f5f5</color>
+
+    <color name="green">#008000</color>
+    <color name="title_grey">#CED9E7</color>
+</resources>

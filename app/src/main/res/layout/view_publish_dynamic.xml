@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeffffff"
+    android:clickable="true">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="12dip"
+        android:layout_marginBottom="86dip"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_publish_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dip"
+            android:layout_marginBottom="13dip"
+            android:drawableRight="@drawable/img_public_dynamic"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/release_dynamic"
+            android:textColor="#484848" />
+
+        <TextView
+            android:id="@+id/tv_create_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dip"
+            android:layout_marginBottom="40dip"
+            android:drawableRight="@drawable/img_create_notice"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/create_inform"
+            android:textColor="#484848" />
+
+        <ImageView
+            android:id="@+id/iv_dynamic_close"
+            android:layout_width="57dip"
+            android:layout_height="57dip"
+            android:src="@drawable/icon_publish_dynamic_close" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>
